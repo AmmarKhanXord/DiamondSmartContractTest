@@ -1,24 +1,4 @@
-# Diamond-1-Hardhat Implementation
-
-This is a reference implementation for [EIP-2535 Diamonds](https://github.com/ethereum/EIPs/issues/2535). To learn about other implementations go here: https://github.com/mudgen/diamond
-
-**Note:** The loupe functions in DiamondLoupeFacet.sol MUST be added to a diamond and are required by the EIP-2535 Diamonds standard.
-
-**Note:** In this implementation the loupe functions are NOT gas optimized. The `facets`, `facetFunctionSelectors`, `facetAddresses` loupe functions are not meant to be called on-chain and may use too much gas or run out of gas when called in on-chain transactions. In this implementation these functions should be called by off-chain software like websites and Javascript libraries etc., where gas costs do not matter.
-
-
-## Installation
-
-1. Clone this repo:
-```console
-git clone git@github.com:mudgen/diamond-1-hardhat.git
-```
-
-2. Install NPM packages:
-```console
-cd diamond-1-hardhat
-npm install
-```
+# Diamond-Hardhat Implementation
 
 ## Deployment
 
